@@ -1,0 +1,19 @@
+{
+    "name": "6Valley",
+    "short_name": "6Valley",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "./Assets/6vally-logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "./Assets/6vally-logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
