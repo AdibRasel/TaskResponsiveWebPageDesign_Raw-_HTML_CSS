@@ -1,14 +1,21 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 
+/* Common  */
+.cursorPointer{
+    cursor: pointer;
+}
+/* Common  */
 
 
-/* TopBar One Start  */
-.TopBarOne{
+
+
+/*======================= TopBar One Start ================================= */
+.TopBarOne {
     display: flex;
     width: auto;
     height: 40px;
@@ -22,21 +29,22 @@ body{
 
 
 /* Left side  */
-.TopBarLeftSide{
+.TopBarLeftSide {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
 }
-.TopBarLeftSide> img{
 
+.TopBarLeftSide>img {
+   
 }
 
-.TopBarLeftSide > a{
+.TopBarLeftSide>a {
     text-decoration: none;
 }
 
-.TopBarLeftSide > a > span{
+.TopBarLeftSide>a>span {
     color: #222222;
     font-weight: 400;
     font-size: 13px;
@@ -48,7 +56,7 @@ body{
 
 
 /* Right Side  */
-.TopBarRightSide{
+.TopBarRightSide {
     margin-left: auto;
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
@@ -57,33 +65,41 @@ body{
 
 }
 
-.TopBarRightSide{
+.TopBarRightSide {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.TopBarRightSide > .usd-english{
+.TopBarRightSide>.usd-english {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.TopBarRightSide > .usd-english > .usd{
+
+.TopBarRightSide>.usd-english>.usd {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 65px;
     height: 18px;
 }
-.usd-english > .english{
+.TopBarRightSide>.usd-english>.usd>img{
+    cursor: pointer;
+}
+
+.usd-english>.english {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 98.9px;
     height: 18px;
-
 }
-.TopBarRightSide > span{
+.usd-english>.english>img{
+    cursor: pointer;
+}
+
+.TopBarRightSide>span {
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -91,4 +107,284 @@ body{
     padding-left: 20px;
 
 }
-/* TopBar One End  */
+
+/*======================= TopBar One End ================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================= Top Bar Two Start ================================= */
+
+.TopBarTwo{
+    display: flex;
+    width: auto;
+    height: 50px;
+    border-top: 1px solid #EDF5FF;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+
+/* First Section */
+.FirstSection{
+    width: 125.61px;
+    height: 50px;
+    padding: 1px;
+    gap: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FirstSection> h2{
+    font-family: 'Kailasa', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 5%;
+    color: #1455AC;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+/* Second Section */
+.SecondSection{
+    width: 551px;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #B9B9B9;
+    border-radius: 5px;
+}
+
+.SecondSection > .MenuIcon{
+    display: flex;
+    height: 30px;
+    width: 60px;
+    justify-content:space-around;
+    align-items: center;
+    border-right: 1px solid #B9B9B9;
+
+}
+.SecondSection>input{
+    border: none;
+    margin-left: 10px;
+    width: auto;
+    width: 100%;
+}
+.SecondSection>input:focus{
+    border: none;
+    outline: none;
+}
+
+
+.SecondSection>.search{
+    background-color: #1455AC;
+    height: 100%;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+
+
+
+
+
+/* Thired Section */
+ .ThiredSection{
+    background-color: red;
+    background-image: url("./Assets/BGbanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 202px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .ThiredSection>.leftside>h2{
+    font-size: 18px;
+    color: #FFFFFF;
+    display: inline;
+    font-family: "Mulish";
+    font-weight: 900;
+    line-height: 22.59px;
+    letter-spacing: 5%;
+    text-align: right;
+
+ }
+ .ThiredSection>.leftside>span{
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 11px;
+    color: #FFFFFF;
+    line-height: 13.81px;
+    letter-spacing: 5%;
+
+ }
+
+ /* =======================  Top Bar Two End   =======================  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Large screens */
+@media (min-width: 1200px) {
+  
+}
+
+/* Medium screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+   
+}
+
+/* Small screens */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Very small screens */
+@media (min-width: 576px) and (max-width: 767px) {
+    .TopBarOne {
+        display: block;
+        height: 60px;
+        align-content: center;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .TopBarRightSide{
+        margin-top: 5px;
+    }
+    .TopBarTwo{
+        display: block;
+        height: auto;
+        justify-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .SecondSection{
+        width: 100%;
+    }
+    .ThiredSection{
+        margin-top: 5px;
+    }
+}
+
+/* Extra small  */
+@media (max-width: 575px) {
+    .TopBarOne {
+        display: block;
+        height: 50px;
+        align-content: center;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .TopBarLeftSide{
+        display: none;
+    }
+    .TopBarTwo{
+        display: block;
+        height: auto;
+        justify-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .SecondSection{
+        width: 100%;
+    }
+    .ThiredSection{
+        display: none;
+    }
+}
+
+/* Super small */
+@media (max-width: 320px) {
+    .TopBarOne {
+        display: none;
+    }
+    .TopBarTwo{
+        display: none;
+    }
+}
