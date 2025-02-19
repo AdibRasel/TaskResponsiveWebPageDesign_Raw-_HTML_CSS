@@ -216,8 +216,8 @@ body {
 
 
 
-/* Thired Section */
- .ThiredSection{
+/* third Section */
+ .thirdSection{
     background-color: red;
     background-image: url("./Assets/BGbanner.png");
     background-size: cover;
@@ -231,7 +231,7 @@ body {
     justify-content: space-around;
     align-items: center;
  }
- .ThiredSection>.leftside>h2{
+ .thirdSection>.leftside>h2{
     font-size: 18px;
     color: #FFFFFF;
     display: inline;
@@ -242,7 +242,7 @@ body {
     text-align: right;
 
  }
- .ThiredSection>.leftside>span{
+ .thirdSection>.leftside>span{
     font-family: "Mulish";
     font-weight: 400;
     font-size: 11px;
@@ -264,7 +264,84 @@ body {
 
 
 
+ /* ======================= Menu Start ======================= */
+.MenuBar{
+    width: auto;
+    height: 175px;
+    border-top: 1px solid #a89e9e;
+    border-bottom: 1px solid #a89e9e;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+
+/* first section  */
+.firstsection{
+    background-color: #1455AC;
+    width: 269px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstsection>img{
+    color: white;
+}
+.firstsection>span{
+    font-family: "Mulish";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.57px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+/* second section */
+.MenuBarSecondSection{
+    display: flex;
+    justify-items: start;
+    align-items: center;
+}
+
+.MenuBarSecondSection> .menuitem{
+    min-width: 90px;
+    max-width: auto;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.MenuBarSecondSection> .menuitem>a{
+    text-decoration: none;
+    padding-right: 5px;
+    color: #222222;
+}
+
+
+
+
+/* third section */
+.thirdsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ /* ======================= Menu End ======================= */
 
 
 
@@ -346,7 +423,7 @@ body {
     .SecondSection{
         width: 100%;
     }
-    .ThiredSection{
+    .thirdSection{
         margin-top: 5px;
     }
 }
@@ -374,7 +451,7 @@ body {
     .SecondSection{
         width: 100%;
     }
-    .ThiredSection{
+    .thirdSection{
         display: none;
     }
 }
