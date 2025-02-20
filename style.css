@@ -9,6 +9,10 @@ body {
 .cursorPointer {
     cursor: pointer;
 }
+.img-fluid {
+    max-width: 100%; 
+    height: auto;
+}
 
 /* Common  */
 
@@ -639,6 +643,48 @@ body {
   .view-all:hover {
     text-decoration: underline;
   }
+
+/* Banner  */
+.ContentBoxRight{
+    display: flex;
+    margin-top: 40px;
+    align-items: start;
+    justify-content: center;
+}
+.ContentBoxRight>.LeftBanner{
+    width: 620px;
+    height: 300px;
+    padding: 5px;
+}
+.ContentBoxRight>.LeftBanner>img{
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+}
+.LeftBanner>.BannerSlider> img{
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+}
+.LeftBanner>.TwoBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    height: 166px;
+}
+.ContentBoxRight>.RightBanner{
+    width: 285px;
+    height: 466px;
+    padding: 5px;
+}
+.ContentBoxRight>.RightBanner>img{
+   border-radius: 10px;
+   height: auto;
+}
+
+
+
 /* ============================== Content Box End ================================ */
 
 
@@ -717,6 +763,8 @@ body {
     .MenuFirst{
         width: 100%;
     }
+
+    /* Slider  */
 
 
 }
