@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu with Dropdown</title>
+    <link rel="stylesheet" href="./MenuCss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="Menu">
+        <div class="MenuFirst">
+            <img src="../Assets/Vector.png" alt="Menu Icon">
+            <span>Browse Category</span>
+            <img src="../Assets/bottomarrow.png" alt="Dropdown Icon">
+        </div>
+
+        <div class="MenuSecond">
+            <div><span>Home</span></div>
+
+            <div class="dropdown">
+                <span class="dropdown-toggle">Offers</span>
+                <img src="../Assets/bottomarrowBlack.png" alt="Dropdown">
+                <ul class="dropdown-menu">
+                    <li>Special Deals</li>
+                    <li>Flash Sales</li>
+                    <li>Seasonal Offers</li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <span class="dropdown-toggle">Stores</span>
+                <img src="../Assets/bottomarrowBlack.png" alt="Dropdown">
+                <ul class="dropdown-menu">
+                    <li>Nearby Stores</li>
+                    <li>Popular Stores</li>
+                    <li>New Arrivals</li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <span class="dropdown-toggle">Brands</span>
+                <img src="../Assets/bottomarrowBlack.png" alt="Dropdown">
+                <ul class="dropdown-menu">
+                    <li>Top Brands</li>
+                    <li>Emerging Brands</li>
+                    <li>Local Brands</li>
+                </ul>
+            </div>
+
+            <div>
+                <span>Discounted Products</span>
+                <img class="icon-small" src="../Assets/discount-solid.png" alt="Discount">
+            </div>
+        </div>
+
+        <div class="MenuThird">
+            <div class="menu-account">
+                <img src="../Assets/usericon.svg" alt="User Icon">
+                <span>Login / Register</span>
+            </div>
+            <div class="Dash"></div>
+            <div class="MenuItemIcon"><span>6</span><img src="../Assets/1.svg" alt="Icon 1"></div>
+            <div class="Dash"></div>
+            <div class="MenuItemIcon"><span>6</span><img src="../Assets/2.svg" alt="Icon 2"></div>
+            <div class="Dash"></div>
+            <div class="MenuItemIcon"><span>6</span><img src="../Assets/shopingbag.svg" alt="Cart"></div>
+        </div>
+
+    </div>
+
+    <script src="./MenuScript.js"></script>
+</body>
+
+</html>

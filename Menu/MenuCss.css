@@ -1,0 +1,300 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.Menu{
+    margin-top: 50px;
+    padding-right: 120px;
+    padding-left: 120px;
+    border-top: 1px solid #a89e9e;
+    border-bottom: 1px solid #a89e9e;
+    display: flex;
+
+}
+
+
+.MenuFirst{
+    background-color: #1455AC;
+    width: 269px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.MenuFirst>span{
+    font-family: "Mulish";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.57px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+
+.MenuSecond{
+    display: flex;
+    align-items: center;
+    font-family: Mulish;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16.32px;
+    letter-spacing: 1%;
+
+}
+.MenuSecond>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    cursor: pointer;
+}
+.MenuSecond>div>img{
+    padding-left: 8px;
+}
+
+
+
+
+
+.MenuThird{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Mulish;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15.06px;
+    letter-spacing: 5%;
+    text-align: right;
+
+}
+
+
+
+.MenuItemIcon {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.MenuItemIcon img {
+    width: 25px;
+    height: 25px;
+}
+
+.MenuItemIcon span {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #1455AC;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+} */
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+.Menu {
+    margin-top: 50px;
+    padding: 0 120px;
+    border-top: 1px solid #a89e9e;
+    border-bottom: 1px solid #a89e9e;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.MenuFirst {
+    background-color: #1455AC;
+    width: 269px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.MenuSecond {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    position: relative;
+    margin: 0px 30px 0px 30px;
+}
+
+.MenuSecond > div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.MenuSecond img {
+    margin-left: 5px;
+    width: 12px;
+}
+
+.icon-small {
+    width: 15px;
+    height: 15px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    width: 180px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown.open .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Right section */
+.MenuThird {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.menu-account {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.MenuItemIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.MenuItemIcon img {
+    width: 100%;
+    height: 100%;
+}
+
+.MenuItemIcon span {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #1455AC;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+.Dash{
+    background-color: #B9B9B980;
+    width: 1px;
+    height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .Menu {
+        padding: 0 20px;
+    }
+    .MenuSecond {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .MenuSecond{
+        margin: 0;
+    }
+
+    .MenuThird{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .Menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .MenuSecond, .MenuThird {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+    }
+    .MenuSecond{
+        margin: 0;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    .MenuThird{
+        display: none;
+    }
+}
