@@ -9,6 +9,7 @@ body {
 .cursorPointer {
     cursor: pointer;
 }
+
 .img-fluid {
     width: 100%;
     height: auto;
@@ -16,7 +17,7 @@ body {
 
 /* Common  */
 
-.FullMenu{
+.FullMenu {
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -194,7 +195,7 @@ body {
 .SecondSection>.MenuIcon {
     display: flex;
     height: 30px;
-    width: 60px;
+    width: 70px;
     justify-content: space-around;
     align-items: center;
     border-right: 1px solid #B9B9B9;
@@ -425,7 +426,7 @@ body {
     text-transform: uppercase;
 }
 
-.MenuSecond > div {
+.MenuSecond>div {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -487,7 +488,7 @@ body {
     gap: 15px;
     font-weight: 500;
     font-size: 12px;
-    margin-left:auto;
+    margin-left: auto;
 }
 
 .menu-account {
@@ -524,11 +525,12 @@ body {
     border-radius: 50%;
 }
 
-.Dash{
+.Dash {
     background-color: #B9B9B980;
     width: 1px;
     height: 20px;
 }
+
 /* ============================= Menu Bar End ===================================== */
 
 
@@ -560,7 +562,7 @@ body {
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 180px;
-    }
+}
 
 
 .ContentBoxsLeft {
@@ -636,6 +638,7 @@ body {
     height: auto;
     border-radius: 10px;
 }
+
 .left-banner {
     width: 70%;
 }
@@ -653,6 +656,7 @@ body {
 .two-banner img {
     width: 50%;
 }
+
 /* ============================== Content Box End ================================ */
 
 
@@ -668,13 +672,352 @@ body {
 
 
 /* ================================Product Slider Start ======================================== */
-.ProductSlider{
+.ProductSlider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.ProductSlider>div {
+    width: 200px;
+    height: auto;
+}
+
+/* ProductSliderOne Styling */
+.ProductSliderOne {
+    display: block;
+    justify-items: center;
+    width: 275px;
+    height: 260px;
+    left: 162px;
+    top: 746px;
+}
+
+.ProductSliderOne>img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.ProductOneTiltle {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.ProductOneTiltle>h2 {
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 24px;
+    color: #1455AC;
+    display: inline;
+    text-align: center;
+}
+
+.ProductOneTiltle>span {
+    font-family: "Helvetica" Neue;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9B9B9B;
+    text-align: center;
+}
+
+.TimeBox {
     display: flex;
 }
-.boxs{
-    width: 300px;
-    height: 3000px;
+
+.TimeBox>div>h2 {
+    background-color: #F2F8FB;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    font-family: "Helvetica" Neue;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
 }
+
+.TimeBox>div>span {
+    margin: 5px;
+    padding: 5px;
+    font-family: "Helvetica" Neue;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9B9B9B;
+    text-align: center;
+}
+
+/* ProductCard Styling */
+.ProductCard {
+    position: relative;
+    text-align: center;
+}
+
+
+
+.ProductDiscountActionBox {
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-top: 65px solid #1455AC;
+    border-radius: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductDiscountActionBox img {
+    width: 20px;
+    height: 20px;
+    margin-top: -80px;
+    margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ProductDiscountBox {
+    position: absolute;
+    background-color: #DB3022;
+    width: 45px;
+    height: 25px;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.ProductDiscountBox>h2 {
+    font-family: "Mulish";
+    font-weight: 800;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.ProductCardBox {
+    background-color: #B9B9B933;
+    border-radius: 10px;
+    width: 200px;
+    height: 180px;
+    align-content: center;
+}
+
+.ProductSliderText {
+    text-align: left;
+}
+
+.ProductSliderText>span {
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 11px;
+    color: #9B9B9B;
+}
+
+.ProductSliderText>h2 {
+    font-family: "Mulish";
+    font-weight: 700;
+    font-size: 14px;
+    color: #222222;
+    cursor: pointer;
+}
+
+.ProductSliderText>.Discount {
+    text-decoration: line-through;
+    font-family: "Mulish";
+    font-weight: 500;
+    font-size: 14px;
+    color: #9B9B9B;
+}
+
+.ProductSliderText>.Price {
+    font-family: "Mulish";
+    font-weight: 800;
+    font-size: 14px;
+    color: #1455AC;
+}
+
+.ProductSliderThree,
+.ProductSliderFour,
+.ProductSliderFive {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    text-align: center;
+}
+
+.ProductSliderThree {
+    background-color: lightblue;
+}
+
+.ProductSliderFour {
+    background-color: lightcoral;
+}
+
+.ProductSliderFive {
+    background-color: lightgreen;
+}
+
+/* Hover effects for the boxes */
+.ProductSliderThree:hover,
+.ProductSliderFour:hover,
+.ProductSliderFive:hover {
+    background-color: #ccc;
+}
+
+/* Add content inside these sliders */
+.ProductSliderThree h2,
+.ProductSliderFour h2,
+.ProductSliderFive h2 {
+    font-family: "Mulish";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+}
+
+/* Add specific content to each slider */
+.ProductSliderThree::before {
+    content: "Slider Three Content";
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
+
+.ProductSliderFour::before {
+    content: "Slider Four Content";
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
+
+.ProductSliderFive::before {
+    content: "Slider Five Content";
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.ProductBegBox {
+    top: 125px;
+    right: 10px;
+    position: absolute;
+    background-color: #1455AC;
+    /* Rectangle 8522 */
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    /* border: 2px solid #000; 
+    border-radius: 0;
+
+    transform: rotate(80deg);  */
+
+    /* border-radius: 0px 10px 0px 100%; */
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ProductBegBox>img {
+    /* width: 50px; */
+
+    width: 20px;
+    padding: auto;
+    /* padding-top: 5px; */
+    border-radius: 50%;
+    /* height: 20.17px;
+    padding-top: 10px;
+    padding-left: 10px; */
+}
+
+
+
+
+
+
+
+
+.star-rating {
+    display: flex;
+    font-size: 13px;
+    color: #d3d3d3;
+    /* Light gray for inactive stars */
+}
+
+.star-rating .star {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star-rating .star.active {
+    color: gold;
+    /* Active star color */
+}
+
+/* When you hover over a star */
+.star-rating .star:hover {
+    color: gold;
+}
+
+
+
+.ProductCardAnother>span {
+    font-family: "Metropolis";
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13.2px;
+    letter-spacing: 0%;
+    color: #222222;
+}
+
+
+.ProductCardImageBox {
+    background-color: #B9B9B933;
+    border-radius: 10px 10px 0px 0px;
+    width: 200px;
+    height: 130px;
+    align-content: center;
+}
+
 
 /* ================================Product Slider End ======================================== */
 
@@ -718,22 +1061,26 @@ body {
         padding-right: 20px;
         padding-top: 240px;
     }
-    .ContentBoxsLeft{
+
+    .ContentBoxsLeft {
         width: 100%;
 
     }
-    .ContentBoxsRight{
+
+    .ContentBoxsRight {
         width: 100%;
     }
+
     .Menu {
         flex-direction: column;
         align-items: flex-start;
         padding-left: 20px;
         padding-right: 20px;
     }
- 
+
 
 }
+
 @media (max-width: 600px) {
     .TopBarOne {
         display: block;
@@ -775,13 +1122,15 @@ body {
         padding-right: 20px;
     }
 
-    .MenuSecond, .MenuThird {
+    .MenuSecond,
+    .MenuThird {
         width: 100%;
         justify-content: flex-start;
         flex-wrap: wrap;
-        
+
     }
-    .MenuSecond{
+
+    .MenuSecond {
         margin: 0;
         padding: 10px;
     }
@@ -790,14 +1139,51 @@ body {
         width: 100%;
     }
 
-    .MenuThird{
+    .MenuThird {
         display: none;
     }
-    .MenuFirst{
+
+    .MenuFirst {
         width: 100%;
     }
 
-    /* Slider  */
+    /* Slider Start  */
+    .ProductSlider {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 20px;
+        padding-left: 120px;
+        padding-right: 120px;
+        
+    }
+
+
+
+    .ProductSlider div {
+        /* width: 100%; */
+        /* One box per row on mobile */
+    }
+
+    .ProductSliderThree,
+    .ProductSliderFour,
+    .ProductSliderFive {
+        width: 100%;
+        /* Full width for each slider */
+        height: 200px;
+        /* Maintain height on mobile */
+    }
+
+    .ProductSliderThree::before,
+    .ProductSliderFour::before,
+    .ProductSliderFive::before {
+        font-size: 12px;
+    }
+
+    /* Slider End  */
+
+
 
 
 }
@@ -835,19 +1221,21 @@ body {
     .Menu {
         padding: 0 20px;
     }
+
     .MenuSecond {
         flex-wrap: wrap;
         justify-content: center;
         padding-bottom: 10px;
     }
-    
-    .MenuSecond{
+
+    .MenuSecond {
         margin: 0;
     }
 
-    .MenuThird{
+    .MenuThird {
         display: none;
     }
+
     /* Banner  */
     .ContentBoxs {
         flex-direction: column;
@@ -878,6 +1266,23 @@ body {
     .two-banner img {
         width: 100%;
     }
+
+
+    /* Slider Start  */
+    .ProductSlider div {
+        /* width: 45%; */
+        /* Display two boxes per row */
+    }
+
+    .ProductSliderThree,
+    .ProductSliderFour,
+    .ProductSliderFive {
+        width: 45%;
+        height: 180px;
+        /* Reduce height for tablets */
+    }
+
+    /* Slider End  */
 }
 
 

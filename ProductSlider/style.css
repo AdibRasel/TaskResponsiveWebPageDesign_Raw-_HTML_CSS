@@ -74,50 +74,57 @@
     text-align: center;
 }
 
-/* ProductSliderTwo Styling */
-.ProductSliderTwo {
+/* ProductCard Styling */
+.ProductCard {
     position: relative;
     text-align: center;
 }
 
-.ProductDiscountActionBox {
+
+
+  .ProductDiscountActionBox {
     top: 0;
     right: 0;
     position: absolute;
-    background-color: #1455AC;
-    /* Rectangle 8522 */
-
-    width: 53.17px;
-    height: 53.17px;
-
-    /* border: 2px solid #000; 
-    border-radius: 0;
-
-    transform: rotate(80deg);  */
-
-    border-radius: 0px 10px 0px 100%;
-
-    /* display: flex;
-    
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-top: 65px solid #1455AC;
+    border-radius: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; */
+  }
 
+  .ProductDiscountActionBox img {
+    width: 20px;
+    height: 20px;
+    margin-top: -80px;
+    margin-right: 40px;
 }
 
-.ProductDiscountActionBox>img {
-    /* width: 50px; */
 
-    width: 20.17px;
-    height: 20.17px;
-    padding-top: 10px;
-    padding-left: 10px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .ProductDiscountBox {
     position: absolute;
     background-color: #DB3022;
-    width: 50px;
-    height: 30px;
+    width: 45px;
+    height: 25px;
     top: 10px;
     left: 10px;
     display: flex;
@@ -133,7 +140,7 @@
     color: #FFFFFF;
 }
 
-.ProductSliderTwoBox {
+.ProductCardBox {
     background-color: #B9B9B933;
     border-radius: 10px;
     width: 200px;
@@ -157,6 +164,7 @@
     font-weight: 700;
     font-size: 14px;
     color: #222222;
+    cursor: pointer;
 }
 
 .ProductSliderText>.Discount {
@@ -174,7 +182,6 @@
     color: #1455AC;
 }
 
-/* ProductSliderThree, ProductSliderFour, ProductSliderFive Styling */
 .ProductSliderThree,
 .ProductSliderFour,
 .ProductSliderFive {
@@ -316,7 +323,7 @@
 
 
 
-.ProductSliderFours>span {
+.ProductCardAnother>span {
     font-family: "Metropolis";
     font-weight: 400;
     font-size: 11px;
@@ -326,7 +333,7 @@
 }
 
 
-.ProductSliderFourBox {
+.ProductCardImageBox {
     background-color: #B9B9B933;
     border-radius: 10px 10px 0px 0px;
     width: 200px;
