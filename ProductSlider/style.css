@@ -1,0 +1,376 @@
+.ProductSlider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ProductSlider>div {
+    width: 200px;
+    height: auto;
+}
+
+/* ProductSliderOne Styling */
+.ProductSliderOne {
+    display: block;
+    justify-items: center;
+    width: 275px;
+    height: 260px;
+    left: 162px;
+    top: 746px;
+}
+
+.ProductSliderOne>img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.ProductOneTiltle {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.ProductOneTiltle>h2 {
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 24px;
+    color: #1455AC;
+    display: inline;
+    text-align: center;
+}
+
+.ProductOneTiltle>span {
+    font-family: "Helvetica" Neue;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9B9B9B;
+    text-align: center;
+}
+
+.TimeBox {
+    display: flex;
+}
+
+.TimeBox>div>h2 {
+    background-color: #F2F8FB;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    font-family: "Helvetica" Neue;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.TimeBox>div>span {
+    margin: 5px;
+    padding: 5px;
+    font-family: "Helvetica" Neue;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9B9B9B;
+    text-align: center;
+}
+
+/* ProductSliderTwo Styling */
+.ProductSliderTwo {
+    position: relative;
+    text-align: center;
+}
+
+.ProductDiscountActionBox {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #1455AC;
+    /* Rectangle 8522 */
+
+    width: 53.17px;
+    height: 53.17px;
+
+    /* border: 2px solid #000; 
+    border-radius: 0;
+
+    transform: rotate(80deg);  */
+
+    border-radius: 0px 10px 0px 100%;
+
+    /* display: flex;
+    
+    align-items: center;
+    justify-content: center; */
+
+}
+
+.ProductDiscountActionBox>img {
+    /* width: 50px; */
+
+    width: 20.17px;
+    height: 20.17px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.ProductDiscountBox {
+    position: absolute;
+    background-color: #DB3022;
+    width: 50px;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.ProductDiscountBox>h2 {
+    font-family: "Mulish";
+    font-weight: 800;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.ProductSliderTwoBox {
+    background-color: #B9B9B933;
+    border-radius: 10px;
+    width: 200px;
+    height: 180px;
+    align-content: center;
+}
+
+.ProductSliderText {
+    text-align: left;
+}
+
+.ProductSliderText>span {
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 11px;
+    color: #9B9B9B;
+}
+
+.ProductSliderText>h2 {
+    font-family: "Mulish";
+    font-weight: 700;
+    font-size: 14px;
+    color: #222222;
+}
+
+.ProductSliderText>.Discount {
+    text-decoration: line-through;
+    font-family: "Mulish";
+    font-weight: 500;
+    font-size: 14px;
+    color: #9B9B9B;
+}
+
+.ProductSliderText>.Price {
+    font-family: "Mulish";
+    font-weight: 800;
+    font-size: 14px;
+    color: #1455AC;
+}
+
+/* ProductSliderThree, ProductSliderFour, ProductSliderFive Styling */
+.ProductSliderThree,
+.ProductSliderFour,
+.ProductSliderFive {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    text-align: center;
+}
+
+.ProductSliderThree {
+    background-color: lightblue;
+}
+
+.ProductSliderFour {
+    background-color: lightcoral;
+}
+
+.ProductSliderFive {
+    background-color: lightgreen;
+}
+
+/* Hover effects for the boxes */
+.ProductSliderThree:hover,
+.ProductSliderFour:hover,
+.ProductSliderFive:hover {
+    background-color: #ccc;
+}
+
+/* Add content inside these sliders */
+.ProductSliderThree h2,
+.ProductSliderFour h2,
+.ProductSliderFive h2 {
+    font-family: "Mulish";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+}
+
+/* Add specific content to each slider */
+.ProductSliderThree::before {
+    content: "Slider Three Content";
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
+
+.ProductSliderFour::before {
+    content: "Slider Four Content";
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
+
+.ProductSliderFive::before {
+    content: "Slider Five Content";
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.ProductBegBox {
+    top: 125px;
+    right: 10px;
+    position: absolute;
+    background-color: #1455AC;
+    /* Rectangle 8522 */
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    /* border: 2px solid #000; 
+    border-radius: 0;
+
+    transform: rotate(80deg);  */
+
+    /* border-radius: 0px 10px 0px 100%; */
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ProductBegBox>img {
+    /* width: 50px; */
+
+    width: 20px;
+    padding: auto;
+    /* padding-top: 5px; */
+    border-radius: 50%;
+    /* height: 20.17px;
+    padding-top: 10px;
+    padding-left: 10px; */
+}
+
+
+
+
+
+
+
+
+.star-rating {
+    display: flex;
+    font-size: 13px;
+    color: #d3d3d3;
+    /* Light gray for inactive stars */
+}
+
+.star-rating .star {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star-rating .star.active {
+    color: gold;
+    /* Active star color */
+}
+
+/* When you hover over a star */
+.star-rating .star:hover {
+    color: gold;
+}
+
+
+
+.ProductSliderFours>span {
+    font-family: "Metropolis";
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13.2px;
+    letter-spacing: 0%;
+    color: #222222;
+}
+
+
+.ProductSliderFourBox {
+    background-color: #B9B9B933;
+    border-radius: 10px 10px 0px 0px;
+    width: 200px;
+    height: 130px;
+    align-content: center;
+}
+
+
+
+/* Responsiveness for tablet (≤ 768px) */
+@media (max-width: 768px) {
+    .ProductSlider div {
+        /* width: 45%; */
+        /* Display two boxes per row */
+    }
+
+    .ProductSliderThree,
+    .ProductSliderFour,
+    .ProductSliderFive {
+        width: 45%;
+        height: 180px;
+        /* Reduce height for tablets */
+    }
+}
+
+/* Responsiveness for mobile (≤ 480px) */
+@media (max-width: 480px) {
+    .ProductSlider div {
+        /* width: 100%; */
+        /* One box per row on mobile */
+    }
+
+    .ProductSliderThree,
+    .ProductSliderFour,
+    .ProductSliderFive {
+        width: 100%;
+        /* Full width for each slider */
+        height: 200px;
+        /* Maintain height on mobile */
+    }
+
+    .ProductSliderThree::before,
+    .ProductSliderFour::before,
+    .ProductSliderFive::before {
+        font-size: 12px;
+    }
+}
