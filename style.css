@@ -10,7 +10,7 @@ body {
     cursor: pointer;
 }
 .img-fluid {
-    max-width: 100%; 
+    width: 100%;
     height: auto;
 }
 
@@ -552,139 +552,91 @@ body {
 
 
 /* ============================== Content Box Start ================================ */
-.ContentBox{
-    padding-top: 160px;
+
+.ContentBoxs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     padding-left: 120px;
     padding-right: 120px;
-}
-.ContentBox>h2{
-    font-family: "Mulish";
-    font-weight: 800;
-    font-size: 13px;
-    line-height: 16.32px;
-    letter-spacing: 1%;
+    padding-top: 180px;
+    }
 
+
+.ContentBoxsLeft {
+    width: 30%;
 }
 
-.ContentBoxLeft{
-    float: left;
-    width: 255px;
-    height: 438px;
-
-}
-.CategoryDot{
-    background-color: #B9B9B933;
-    width: 200px;
-    height: 1px;
-    justify-self: center;
+.ContentBoxsRight {
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.category-container {
-    /* width: 100%; */
-    max-width: 438px;
-    /* border: 1px solid #ccc; */
-    border-radius: 8px;
-    overflow: hidden;
-
-  }
-
-  .category-title {
+/* ===== Category Section ===== */
+.category-title {
     padding: 12px 16px;
-    font-family: "Mulish";
+    font-family: "Mulish", sans-serif;
     font-weight: 800;
     font-size: 13px;
-    line-height: 16.32px;
-    letter-spacing: 1%;
     color: #181615;
-    padding-top: 40px;
-  }
+}
 
-  .category-list {
+.category-list {
     list-style: none;
-    padding-left: 0px;
-    padding: 0px;
-    margin: 0px;
-    font-family: "Mulish";
-    font-weight: 450;
-    font-size: 13px;
-    line-height: 16.32px;
-    letter-spacing: 0%;
+    padding: 0;
+    margin: 0;
+}
 
-  }
-
-  .category-item {
-    width: 80%;
+.category-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 16px;
-    /* border-bottom: 1px solid #eaeaea; */
     cursor: pointer;
     transition: background-color 0.3s ease;
-    justify-self: center;
-  }
+}
 
-  .category-item:hover {
+.category-item:hover {
     background-color: #f2f2f2;
-  }
+}
 
-
-
-  .view-all {
+.view-all {
+    display: block;
     text-align: center;
     padding: 10px;
     font-size: 14px;
     color: #007bff;
     text-decoration: none;
-    /* border-top: 1px solid #eaeaea; */
-    display: block;
-  }
+}
 
-  .view-all:hover {
+.view-all:hover {
     text-decoration: underline;
-  }
+}
 
-/* Banner  */
-.ContentBoxRight{
-    display: flex;
-    margin-top: 40px;
-    align-items: start;
-    justify-content: center;
-}
-.ContentBoxRight>.LeftBanner{
-    width: 620px;
-    height: 300px;
-    padding: 5px;
-}
-.ContentBoxRight>.LeftBanner>img{
-    border-radius: 10px;
-    width: auto;
+/* ===== Banners ===== */
+.responsive-img {
+    width: 100%;
     height: auto;
-}
-.LeftBanner>.BannerSlider> img{
     border-radius: 10px;
-    width: auto;
-    height: auto;
 }
-.LeftBanner>.TwoBanner{
+.left-banner {
+    width: 70%;
+}
+
+.right-banner {
+    width: 28%;
+}
+
+.two-banner {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 620px;
-    height: 166px;
-}
-.ContentBoxRight>.RightBanner{
-    width: 285px;
-    height: 466px;
-    padding: 5px;
-}
-.ContentBoxRight>.RightBanner>img{
-   border-radius: 10px;
-   height: auto;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-
-
+.two-banner img {
+    width: 50%;
+}
 /* ============================== Content Box End ================================ */
 
 
@@ -702,7 +654,7 @@ body {
 
 
 
-
+/* ======================================= Responsive Start ================================== */
 /* For devices with width up to 600px */
 @media (max-width: 600px) {
     .TopBarOne {
@@ -751,6 +703,7 @@ body {
     }
     .MenuSecond{
         margin: 0;
+        padding: 10px;
     }
 
     .dropdown-menu {
@@ -805,6 +758,7 @@ body {
     .MenuSecond {
         flex-wrap: wrap;
         justify-content: center;
+        padding-bottom: 10px;
     }
     
     .MenuSecond{
@@ -814,4 +768,35 @@ body {
     .MenuThird{
         display: none;
     }
+    /* Banner  */
+    .ContentBoxs {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 300px;
+    }
+
+    .ContentBoxsLeft,
+    .ContentBoxsRight {
+        width: 100%;
+    }
+
+    .ContentBoxsRight {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-banner,
+    .right-banner {
+        width: 100%;
+    }
+
+    .two-banner {
+        flex-direction: column;
+    }
+
+    .two-banner img {
+        width: 100%;
+    }
 }
+/* ======================================= Responsive End ================================== */

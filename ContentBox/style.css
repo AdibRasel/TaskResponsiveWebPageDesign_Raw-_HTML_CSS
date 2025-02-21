@@ -1,27 +1,29 @@
-/* ============================== Content Box Start ================================ */
-/* .ContentBox {
-    padding: 40px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-} */
-
-/* ============================== Left Side (Category) ================================ */
-/* .ContentBoxLeft {
+.responsive-img {
     width: 100%;
-    max-width: 255px;
-    float: left;
+    height: auto;
+    border-radius: 10px;
+}
 
-} */
+.ContentBoxs {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    gap: 20px;
+}
 
-/* .category-container {
-    border-radius: 8px;
-    overflow: hidden;
-} */
+.ContentBoxsLeft {
+    width: 30%;
+}
 
+.ContentBoxsRight {
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ===== Category Section ===== */
 .category-title {
-    padding: 12px 16px 0;
+    padding: 12px 16px;
     font-family: "Mulish", sans-serif;
     font-weight: 800;
     font-size: 13px;
@@ -47,12 +49,6 @@
     background-color: #f2f2f2;
 }
 
-.CategoryDot {
-    background-color: #b9b9b933;
-    width: 100%;
-    height: 1px;
-}
-
 .view-all {
     display: block;
     text-align: center;
@@ -66,129 +62,51 @@
     text-decoration: underline;
 }
 
-/* ============================== Right Side (Banners) ================================ */
-.ContentBoxRight {
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    width: 100%;
-    height: auto; */
+/* ===== Banners ===== */
+.left-banner {
+    width: 70%;
 }
 
-.LeftBanner {
-    /* width: 100%;
-    max-width: 620px; */
+.right-banner {
+    width: 28%;
 }
 
-.BannerSlider img,
-.TwoBanner img,
-.RightBanner img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* .TwoBanner {
+.two-banner {
     display: flex;
-    justify-content: space-between;
     gap: 10px;
     margin-top: 10px;
-} */
+}
 
-.TwoBanner img {
+.two-banner img {
     width: 50%;
 }
 
-/* .RightBanner {
-    width: 100%;
-    max-width: 285px;
-} */
-
-/* ============================== Responsive Media Queries ================================ */
-/* ============================== Responsive Media Queries ================================ */
-
-/* 💻 বড় স্ক্রিন (≥992px) */
-@media (min-width: 992px) {
-    .ContentBox {
-        padding: 50px 100px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .ContentBoxLeft {
-        width: 30%;
-    }
-
-    .ContentBoxRight {
-        width: 68%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .TwoBanner {
-        display: flex;
-        gap: 10px;
-    }
-
-    .TwoBanner img, .RightBanner img, .BannerSlider img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-}
-
-/* 📱 ছোট স্ক্রিন (≤991px) */
 @media (max-width: 991px) {
-    .ContentBox {
-        padding: 30px 15px;
+    .ContentBoxs {
         flex-direction: column;
-        align-items: center;
+        padding: 20px;
     }
 
-    .ContentBoxLeft {
+    .ContentBoxsLeft,
+    .ContentBoxsRight {
         width: 100%;
-        margin-bottom: 20px;
     }
 
-    .ContentBoxRight {
-        width: 100%;
+    .ContentBoxsRight {
         flex-direction: column;
-        align-items: center;
+        gap: 20px;
     }
 
-    .TwoBanner {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .TwoBanner img, .RightBanner img, .BannerSlider img {
+    .left-banner,
+    .right-banner {
         width: 100%;
-        height: auto;
-        border-radius: 10px;
     }
-}
 
-/* ============================== Responsive Media Queries End ================================ */
+    .two-banner {
+        flex-direction: column;
+    }
 
-/* ============================== Content Box End ================================ */
-
-
-
-
-
-.ContentBoxs{
-    height: auto;
-    display: flex;
-    padding-left: 120px;
-    padding-right: 120px;
-}
-
-.ContentBoxRights{
-    /* float: left; */
-    display: flex;
-}
-.LeftBanners {
-    width: 100%;
-    max-width: 620px;
+    .two-banner img {
+        width: 100%;
+    }
 }
